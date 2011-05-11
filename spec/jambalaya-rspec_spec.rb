@@ -1,7 +1,11 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
 describe "JambalayaRspec" do
-  it "fails" do
-    fail "hey buddy, you should probably rename this file and start specing for real"
+  before do
+    @jambalaya = Jambalaya.squeeze(File.expand_path(File.dirname(__FILE__) + "/helloworld.js"),"exports",["require 'rubygems'","require 'rspec'"])
+  end
+  describe 'helloworld' do
+  	subject {@jambalaya.HelloWorld}
+  	it {should == 'HelloWorld!'}
   end
 end

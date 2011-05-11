@@ -17,11 +17,14 @@ Jeweler::Tasks.new do |gem|
   gem.name = "jambalaya-rspec"
   gem.homepage = "http://github.com/gardentree/jambalaya-rspec"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "takahiro.ueki@gmail.com"
-  gem.authors = ["gardentree"]
+  gem.email = %q{takahiro.ueki@gmail.com}
+  gem.summary = %Q{Jambalaya for RSpec}
+  gem.description = %Q{Jambalaya for RSpec}
+  gem.authors = ["takahiro ueki"]
   # dependencies defined in Gemfile
+
+  gem.files = FileList['lib/**/*.rb','bin/*','[A-Z]*','test/**/*'].to_a
+  gem.add_development_dependency "rspec", ">= 2.5.0"
 end
 Jeweler::RubygemsDotOrgTasks.new
 
