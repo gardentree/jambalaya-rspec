@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{jambalaya-rspec}
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["gardentree"]
-  s.date = %q{2011-05-12}
+  s.authors = ["takahiro ueki"]
+  s.date = %q{2011-05-16}
   s.description = %q{Jambalaya for RSpec}
   s.email = %q{takahiro.ueki@gmail.com}
   s.extra_rdoc_files = [
@@ -17,20 +17,19 @@ Gem::Specification.new do |s|
     "README.rdoc"
   ]
   s.files = [
-    ".document",
-    ".rspec",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "lib/jambalaya-rspec.rb",
-    "spec/jambalaya-rspec_spec.rb",
-    "spec/spec_helper.rb"
+    "bin/jambalaya-0.0.2.jar",
+    "jambalaya-rspec.gemspec",
+    "lib/jambalaya-rspec.rb"
   ]
   s.homepage = %q{http://github.com/gardentree/jambalaya-rspec}
   s.licenses = ["MIT"]
-  s.require_paths = ["lib","bin"]
+  s.require_paths = ["lib"]
   s.rubygems_version = %q{1.5.2}
   s.summary = %q{Jambalaya for RSpec}
 
@@ -42,17 +41,20 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.6.0"])
       s.add_development_dependency(%q<rcov>, [">= 0"])
+      s.add_development_dependency(%q<rspec>, [">= 2.5.0"])
     else
       s.add_dependency(%q<rspec>, ["~> 2.3.0"])
       s.add_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.6.0"])
       s.add_dependency(%q<rcov>, [">= 0"])
+      s.add_dependency(%q<rspec>, [">= 2.5.0"])
     end
   else
     s.add_dependency(%q<rspec>, ["~> 2.3.0"])
     s.add_dependency(%q<bundler>, ["~> 1.0.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.6.0"])
     s.add_dependency(%q<rcov>, [">= 0"])
+    s.add_dependency(%q<rspec>, [">= 2.5.0"])
   end
 end
 
