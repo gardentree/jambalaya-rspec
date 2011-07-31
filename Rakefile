@@ -20,7 +20,7 @@ Jeweler::Tasks.new do |gem|
   gem.email = %q{takahiro.ueki@gmail.com}
   gem.summary = %Q{Jambalaya for RSpec}
   gem.description = %Q{Jambalaya for RSpec}
-  gem.authors = ["takahiro ueki"]
+  gem.authors = ["gardentree"]
   # dependencies defined in Gemfile
 
   gem.files = FileList['lib/**/*.rb','bin/*','[A-Z]*','test/**/*'].to_a
